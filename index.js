@@ -19,7 +19,7 @@ hexo.extend.generator.register('robotstxt', function(locals){
 
 			if( cfg.sitemap ) {
 				cfg.sitemap.forEach(function(entry) {
-					body += "Sitemap: " + entry + "\n";
+					body += "Sitemap: " + hexo.config.url + entry + "\n";
 				});
 			}
 
